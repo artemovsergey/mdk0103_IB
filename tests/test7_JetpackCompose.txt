@@ -1,0 +1,329 @@
+192.168.255 192.168.4
+Ставропольский колледж связи
+Специальность::0907::Информационные системы и программирование
+Дисциплина::2003::МДК0103 Разработка мобильных приложений: JC
+Преподаватель::Артемов С.В.
+Индекс теста::7::МДК0103 Разработка мобильных приложений: JC
+Всего вопросов::40
+Выводимых вопросов::35
+Тип теста::S=100::Z(DCDCDC)::J90%80%70%
+
+##01::3
+Что такое Jetpack Compose?
+
+Современный набор инструментов для создания пользовательских интерфейсов для Android
+Язык программирования для мобильных приложений
+База данных для Android приложений
+Система управления версиями
+
+##02::3
+Какой аннотацией помечается композитная функция?
+
+@Composable
+@Preview
+@Android
+@Function
+
+##03::3
+Какой аннотацией помечается функция для предварительного просмотра в Android Studio?
+
+@Preview
+@Composable
+@View
+@Design
+
+##04::3
+Какой элемент пользовательского интерфейса используется для отображения текста?
+
+Text
+Button
+Image
+TextField
+
+##05::3
+Какой композитный элемент располагает дочерние элементы вертикально?
+
+Column
+Row
+Box
+Stack
+
+##06::3
+Какой композитный элемент располагает дочерние элементы горизонтально?
+
+Row
+Column
+Box
+Linear
+
+##07::3
+Какая единица измерения используется для размера шрифта в Compose?
+
+sp
+dp
+px
+pt
+
+##08::3
+Что означает SP в контексте размера шрифта?
+
+Масштабируемые пиксели
+Статические пиксели
+Системные параметры
+Стандартные пиксели
+
+##09::3
+Какой параметр Text используется для выравнивания текста?
+
+textAlign
+alignment
+gravity
+orientation
+
+##10::3
+Какой параметр Column используется для вертикального выравнивания?
+
+verticalArrangement
+horizontalAlignment
+orientation
+gravity
+
+##11::3
+Какой модификатор используется для добавления отступов?
+
+padding
+margin
+space
+indent
+
+##12::3
+Какой модификатор используется для выравнивания внутри Column?
+
+align
+gravity
+layout_gravity
+position
+
+##13::3
+Какой класс активности используется в Compose приложениях?
+
+ComponentActivity
+MainActivity
+ComposeActivity
+AppActivity
+
+##14::3
+Какой метод активности используется для установки Compose контента?
+
+setContent
+onCreate
+setCompose
+createUI
+
+##15::3
+Какой должна быть именовательная конвенция для композитных функций?
+
+PascalCase
+camelCase
+snake_case
+kebab-case
+
+##16::3
+Какой композитный элемент используется для фоновой поверхности?
+
+Surface
+Background
+Container
+Frame
+
+##17::3
+Какой параметр @Preview показывает фон предварительного просмотра?
+
+showBackground
+backgroundColor
+showBack
+hasBackground
+
+##18::3
+Какой тип функций используется в Compose для описания UI?
+
+Композитные функции
+Обычные функции
+Статические функции
+Асинхронные функции
+
+##19::3
+Какой метод используется для установки максимального размера модификатора?
+
+fillMaxSize
+matchParent
+wrapContent
+maxSize
+
+##20::3
+Какой класс используется для определения цветовой схемы приложения?
+
+MaterialTheme
+ColorScheme
+AppTheme
+ThemeColors
+
+##21::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что будет отображено на экране при выполнении этого кода?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Composable fun Greeting() { Text(text = "Hello World!") }</code></div>
+
+"Hello World!"
+"Hello Android"
+"Greeting"
+Ничего не отобразится
+
+##22::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой будет результат этого кода?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Composable fun MyScreen() { Column { Text("First") Text("Second") } }</code></div>
+
+Два текста расположены вертикально
+Два текста расположены горизонтально
+Только текст "First"
+Текст "FirstSecond" в одной строке
+
+##23::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что делает этот код?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Preview(showBackground = true) @Composable fun PreviewFunction() { Text("Preview Text") }</code></div>
+
+Создает предварительный просмотр в Android Studio
+Запускает приложение на устройстве
+Компилирует финальное приложение
+Создает новый activity
+
+##24::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой размер шрифта установлен в этом коде?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Text(text = "Hello", fontSize = 24.sp)</code></div>
+
+24 масштабируемых пикселя
+24 независимых от плотности пикселя
+24 точки
+24 пикселя
+
+##25::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что будет отображено в предварительном просмотре?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Preview @Composable fun TestPreview() { Row { Text("A") Text("B") Text("C") } }</code></div>
+
+Тексты A, B, C в строке
+Тексты A, B, C в столбце
+Только текст A
+Текст ABC в одной строке
+
+##26::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой модификатор используется в этом коде и что он делает?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Text(text = "Hello", modifier = Modifier.padding(16.dp))</code></div>
+
+Добавляет отступы 16dp вокруг текста
+Изменяет размер текста
+Меняет цвет текста
+Добавляет тень к тексту
+
+##27::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что означает параметр lineHeight в этом коде?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Text(text = "Hello", fontSize = 20.sp, lineHeight = 24.sp)</code></div>
+
+Высоту строки текста
+Межбуквенный интервал
+Отступ между абзацами
+Высоту всего текстового блока
+
+##28::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой будет результат этого кода?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Composable fun AlignmentExample() { Column(horizontalAlignment = Alignment.CenterHorizontally) { Text("Center") Text("Aligned") } }</code></div>
+
+Оба текста будут выровнены по центру горизонтально
+Тексты будут выровнены по левому краю
+Тексты будут выровнены по правому краю
+Тексты будут растянуты по ширине
+
+##29::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что делает этот модификатор?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Text(text = "Signature", modifier = Modifier.align(Alignment.End))</code></div>
+
+Выравнивает текст по правому краю внутри родительского контейнера
+Выравнивает текст по центру
+Добавляет отступ справа
+Размещает текст в конце экрана
+
+##30::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой цвет будет у Surface в этом коде?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Surface(color = MaterialTheme.colorScheme.background) { Text("Hello") }</code></div>
+
+Фоновый цвет из темы приложения
+Белый цвет
+Черный цвет
+Прозрачный цвет
+
+##31::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что означает этот синтаксис в Compose?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Column { Text("Item 1") Text("Item 2") }</code></div>
+
+Использование синтаксиса trailing lambda для передачи дочерних элементов
+Ошибку синтаксиса
+Определение анонимной функции
+Создание лямбда-выражения
+
+##32::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой будет результат, если вызвать эту функцию?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Composable fun NumberDisplay() { val number = 5 Text(text = "Number: $number") }</code></div>
+
+Отобразится "Number: 5"
+Отобразится "Number: $number"
+Ошибка компиляции
+Ничего не отобразится
+
+##33::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что делает параметр verticalArrangement в этом коде?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Column(verticalArrangement = Arrangement.Center, modifier = Modifier.fillMaxSize()) { Text("Centered") }</code></div>
+
+Располагает дочерние элементы по центру вертикально
+Располагает дочерние элементы по центру горизонтально
+Добавляет вертикальные отступы
+Выравнивает текст по центру
+
+##34::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой тип модификатора используется в этом коде?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Text(text = "Hello", modifier = Modifier.padding(8.dp).align(Alignment.CenterHorizontally))</code></div>
+
+Цепочка модификаторов
+Одиночный модификатор
+Групповой модификатор
+Вложенный модификатор
+
+##35::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что будет отображено при выполнении этого кода?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Composable fun ConditionalText(show: Boolean) { if (show) { Text("Visible") } else { Text("Hidden") } }</code></div>
+
+"Visible" если show=true, иначе "Hidden"
+Всегда "Visible"
+Всегда "Hidden"
+Ошибку компиляции
+
+##36::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой будет результат этого кода с двумя Text элементами без контейнера?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Composable fun ProblematicView() { Text("First") Text("Second") }</code></div>
+
+Тексты будут наложены друг на друга
+Тексты будут расположены в столбце
+Тексты будут расположены в строке
+Ошибка компиляции
+
+##37::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что означает эта аннотация с параметрами?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Preview(showBackground = true, name = "My Preview")</code></div>
+
+Создает предварительный просмотр с фоном и именем "My Preview"
+Запускает приложение с определенными параметрами
+Настраивает тему приложения
+Определяет стиль текста
+
+##38::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой класс нужно импортировать для использования .sp?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Text(text = "Hi", fontSize = 16.sp)</code></div>
+
+androidx.compose.ui.unit.sp
+androidx.compose.ui.text.sp
+androidx.compose.foundation.sp
+androidx.compose.material.sp
+
+##39::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Что делает этот код с использованием Row?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">Row(horizontalArrangement = Arrangement.SpaceBetween) { Text("Left") Text("Right") }</code></div>
+
+Распределяет тексты "Left" и "Right" по краям с пространством между ними
+Выравнивает тексты по левому краю
+Выравнивает тексты по центру
+Размещает тексты друг за другом без промежутков
+
+##40::3
+<div style="display:flex;flex-direction:column;gap:1rem;background:#f5f5f5;padding:20px;border-radius:8px;border-left:4px solid #4CAF50"><b>Какой будет результат при вызове этой функции?</b><br><code style="background:#e8f5e8;padding:10px;border-radius:3px">@Composable fun GreetingWithParam(name: String) { Text(text = "Hello, $name!") }</code></div>
+
+Отобразится приветствие с переданным именем
+Ошибка компиляции из-за отсутствия модификатора
+Отобразится "Hello, $name!"
+Ничего не отобразится без вызова в setContent
