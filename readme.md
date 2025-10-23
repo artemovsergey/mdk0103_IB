@@ -36,7 +36,7 @@
 
 13 Практическая работа 6. Основы композиции
 
-14 <a href="http://192.168.4.90/asv/mdk0103_IB/src/master/course/%d0%a0%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%202.%20Jetpack%20Compose/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f%20%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%207.%20%d0%98%d0%bd%d1%82%d0%b5%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d0%be%d0%b5%20%d0%bf%d1%80%d0%b8%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20Dice%20Roller.md"> Практическая работа 7. Интерактивное приложение Dice Roller  20.10</a>
+14 <a href="http://192.168.4.90/asv/mdk0103_IB/src/master/course/%d0%a0%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%202.%20Jetpack%20Compose/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f%20%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%207.%20%d0%98%d0%bd%d1%82%d0%b5%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d0%be%d0%b5%20%d0%bf%d1%80%d0%b8%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20Dice%20Roller.md"> Практическая работа 7. Интерактивное приложение Dice Roller</a> **20.10**
 
 15 <a href="http://192.168.4.90/asv/mdk0103_IB/src/master/course/%d0%a0%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%202.%20Jetpack%20Compose/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f%20%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%208.%20%d0%9e%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b0%20%d0%bd%d0%b0%d0%b6%d0%b0%d1%82%d0%b8%d1%8f%20%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b8%20%28LemonadeApp%29.md">Практическая работа 8. Обработка нажатии кнопкиы </a> **23.10**
 
