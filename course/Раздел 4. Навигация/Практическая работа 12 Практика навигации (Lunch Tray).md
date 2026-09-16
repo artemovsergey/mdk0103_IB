@@ -1,94 +1,314 @@
-# Практическая работа 12. Добавление навигации в приложение
+# Практическая работа 12. Навигация (Lunch Tray)
 
-Это упражнение посвящено созданию компонентов, необходимых для добавления навигации в приложение с несколькими экранами. Материал развивает то, что вы узнали о навигации, и позволяет применить эти знания для добавления навигации в существующее приложение.
+В этой работе вы закрепите навыки навигации из лекции 9, создав приложение **Lunch Tray** — пошаговый заказ обеда.
 
-## Предварительные условия
-Курс «Основы Android в Compose» через кодовую лабораторию «Навигация между экранами с помощью Compose».
-Что вам понадобится
-Компьютер с доступом в интернет и установленной Android Studio
-Начальный код приложения «Обеденный поднос».
-Что вы будете создавать
-В этих практических задачах вы завершите работу над приложением `Lunch Tray`, добавив навигацию. Приложение `Lunch Tray` - это интерактивное приложение для заказа обедов с тремя экранами. Каждый экран представляет один из трех типов пунктов меню, из которых вы можете выбрать: блюдо, гарнир и сопровождение.
+### Пререквизиты
 
-Тренировочные задачи разбиты на секции, в которых вам предстоит выполнить следующие действия:
+- Лекция 9 «Навигация».
+- Умение настроить `NavigationContainer` и `Stack.Navigator`.
+- Умение передавать параметры между экранами.
 
-Создайте ссылку для каждого экрана, по которому перемещается пользователь.
-Инициализировать контроллер навигации.
-Создайте верхнюю панель, которая отображает заголовок экрана и кнопки навигации, если это необходимо.
-Настройте навигационный узел, который определяет маршрутизацию от одного экрана к другому.
-Итоговый поток приложения будет выглядеть следующим образом:
+### Что вы узнаете
 
-<img src="https://developer.android.com/static/codelabs/basic-android-kotlin-compose-practice-navigation/img/6e7d1c4638c64988_856.png"/>
+- Как организовать пошаговый поток из нескольких экранов.
+- Как передавать состояние между экранами через параметры.
+- Как реализовать отмену заказа и возврат к началу.
+- Как динамически менять заголовок экрана.
 
-![](https://developer.android.com/static/codelabs/basic-android-kotlin-compose-practice-navigation/img/6e7d1c4638c64988_856.png)
+### Что вы создадите
 
+Приложение **Lunch Tray** с пятью экранами: выбор основного блюда, гарнира, напитка, дополнительного блюда и итоговый чек.
 
-# 2. Настройте
-Загрузите стартовый код
-URL стартового кода:
+## Обзор потока экранов
 
-> https://github.com/google-developer-training/basic-android-kotlin-compose-training-lunch-tray
+```
+Start → Entree → SideDish → Accompaniment → Checkout
+```
 
-Имя ветки с кодом стартера: starter
+На каждом экране пользователь выбирает один вариант и нажимает «Далее». На экране `Checkout` показывается итог и кнопка «Отправить заказ». Кнопка «Отмена» в заголовке возвращает к началу.
 
-В Android Studio откройте папку basic-android-kotlin-compose-training-lunch-tray.
-Откройте код приложения Lunch Tray в Android Studio.
+## Установка
 
+```
+npx expo install @react-navigation/native @react-navigation/native-stack
+npx expo install react-native-screens react-native-safe-area-context
+```
 
-# 3. Перечисление экранов
-В этом разделе вы создадите класс enum для хранения констант для каждого из следующих экранов приложения Lunch Tray:
+## Общий компонент выбора
 
-Start
-меню блюд
-Меню гарнира
-Меню сопровождения
-Оформление заказа .
-Каждый экран должен иметь связанный с ним заголовок в виде строки. Строки доступны в начальном коде в виде ресурсов.
+Все экраны выбора похожи. Создадим переиспользуемый компонент:
 
+```tsx
+function SelectionScreen({
+  title,
+  options,
+  onNext,
+}: {
+  title: string
+  options: string[]
+  onNext: (option: string) => void
+}) {
+  const [selected, setSelected] = useState<string | null>(null)
 
-# 4. Контроллер навигации и инициализация
-В этом разделе вы создаете контроллер навигации. Вы также инициализируете запись в стеке и имя текущего экрана.
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>{title}</Text>
+      {options.map((option) => (
+        <Button
+          key={option}
+          title={selected === option ? `✓ ${option}` : option}
+          onPress={() => setSelected(option)}
+        />
+      ))}
+      <Button
+        title="Далее"
+        disabled={selected === null}
+        onPress={() => onNext(selected!)}
+      />
+    </View>
+  )
+}
+```
 
-Имя текущего экрана должно быть либо именем начального экрана, либо именем целевого экрана, если он существует в данный момент.
+## Экраны приложения
 
+```tsx
+import { NavigationContainer } from '@react-navigation/native'
+import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
-# 5. AppBar
-Создайте композит для AppBar композита Scaffold. AppBar должен отображать заголовок текущего экрана. Соответствующая кнопка навигации назад также должна появляться на экране, если навигация назад возможна. Навигация назад не должна быть доступна с начального экрана.
+const Stack = createNativeStackNavigator()
 
-Последний скриншот
-На следующих скриншотах показаны два примера AppBar: один без кнопки вверх, другой с ней.
+function EntreeScreen({ navigation }: { navigation: any }) {
+  return (
+    <SelectionScreen
+      title="Выберите основное блюдо"
+      options={['Сэндвич с индейкой', 'Овощная лазанья', 'Салат с тунцом']}
+      onNext={(entree) => navigation.navigate('SideDish', { entree })}
+    />
+  )
+}
 
-![](https://developer.android.com/static/codelabs/basic-android-kotlin-compose-practice-navigation/img/89162a2f5b189ffc_856.png)
+function SideDishScreen({ navigation, route }: { navigation: any; route: any }) {
+  return (
+    <SelectionScreen
+      title="Выберите гарнир"
+      options={['Картофель фри', 'Салат', 'Суп']}
+      onNext={(sideDish) =>
+        navigation.navigate('Accompaniment', { ...route.params, sideDish })
+      }
+    />
+  )
+}
 
-Спецификации пользовательского интерфейса
-Используйте значок Icons.Filled.ArrowBack для кнопки навигации назад.
+function AccompanimentScreen({ navigation, route }: { navigation: any; route: any }) {
+  return (
+    <SelectionScreen
+      title="Выберите напиток"
+      options={['Чай', 'Кофе', 'Лимонад']}
+      onNext={(accompaniment) =>
+        navigation.navigate('Checkout', { ...route.params, accompaniment })
+      }
+    />
+  )
+}
+```
 
-# 6. Навигационный хост
-В этом упражнении вы построите навигационную маршрутизацию для приложения Lunch Tray с помощью хоста навигации.
+Обратите внимание на приём `{ ...route.params, sideDish }`: так мы **накапливаем** ранее выбранные блюда и передаём их дальше. К моменту выхода на экран `Checkout` в `route.params` собраны все выборы.
 
-На следующей диаграмме показан навигационный поток для приложения Lunch Tray:
+## Экран Checkout
 
-![](https://developer.android.com/static/codelabs/basic-android-kotlin-compose-practice-navigation/img/61df3b2ee856325a_856.png)
+```tsx
+function CheckoutScreen({ route }: { route: any }) {
+  const { entree, sideDish, accompaniment } = route.params
 
-Кнопка Start Order на начальном экране переходит к экрану меню Entree.
-Кнопка Next на экране меню Entree переходит к экрану меню Side dish.
-Кнопка Next на экране меню Side dish переходит к экрану меню Accompaniment.
-Кнопка Next на экране меню Accompaniment переходит к экрану Checkout.
-Кнопка Submit (Отправить) на экране Checkout (Проверка) позволяет перейти к экрану Start (Начало).
-Кнопка «Отмена» на любом экране возвращает к начальному экрану.
+  const shareOrder = async () => {
+    const { Share } = require('react-native')
+    await Share.share({
+      message: `Заказ: ${entree}, ${sideDish}, ${accompaniment}`,
+    })
+  }
 
-> Примечание: Поскольку начальный экран является началом навигационного потока, вы можете перейти к нему, открыв экран с задней панели.
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Ваш заказ</Text>
+      <Text>Основное: {entree}</Text>
+      <Text>Гарнир: {sideDish}</Text>
+      <Text>Напиток: {accompaniment}</Text>
+      <Button title="Отправить заказ" onPress={shareOrder} />
+    </View>
+  )
+}
+```
 
+## Корневой компонент и заголовки
 
-Окончательный результат
-После завершения реализации навигационный поток вашего приложения должен выглядеть следующим образом:
+Заголовок каждого экрана задаётся через `options.title`. Кнопку «Отмена» добавляют в `headerRight` или `headerLeft`:
 
-![](https://developer.android.com/static/codelabs/basic-android-kotlin-compose-practice-navigation/img/edb246dff8cf57f0.gif)
+```tsx
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Entree">
+        <Stack.Screen
+          name="Entree"
+          component={EntreeScreen}
+          options={({ navigation }) => ({
+            title: 'Lunch Tray',
+            headerBackVisible: false,
+          })}
+        />
+        <Stack.Screen name="SideDish" component={SideDishScreen} options={{ title: 'Гарнир' }} />
+        <Stack.Screen
+          name="Accompaniment"
+          component={AccompanimentScreen}
+          options={{ title: 'Напиток' }}
+        />
+        <Stack.Screen name="Checkout" component={CheckoutScreen} options={{ title: 'Чек' }} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  )
+}
+```
 
+- `headerBackVisible: false` скрывает кнопку «Назад» на первом экране.
+- На остальных экранах кнопка «Назад» появляется автоматически — это и есть отмена текущего шага.
 
-# 7. Получите код решения
-URL-адрес кода решения:
+Чтобы вернуться к самому началу из любого места, используйте:
 
-https://github.com/google-developer-training/basic-android-kotlin-compose-training-lunch-tray
+```tsx
+navigation.popToTop()
+```
 
-Название ветки с кодом решения: main
+## Полный код
+
+```tsx
+import { StatusBar } from 'expo-status-bar';
+import { useState } from 'react';
+import { Button, Share, StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+
+const Stack = createNativeStackNavigator();
+
+function SelectionScreen({
+  title,
+  options,
+  onNext,
+}: {
+  title: string
+  options: string[]
+  onNext: (option: string) => void
+}) {
+  const [selected, setSelected] = useState<string | null>(null)
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>{title}</Text>
+      {options.map((option) => (
+        <Button
+          key={option}
+          title={selected === option ? `✓ ${option}` : option}
+          onPress={() => setSelected(option)}
+        />
+      ))}
+      <Button
+        title="Далее"
+        disabled={selected === null}
+        onPress={() => onNext(selected!)}
+      />
+    </View>
+  )
+}
+
+function EntreeScreen({ navigation }: { navigation: any }) {
+  return (
+    <SelectionScreen
+      title="Выберите основное блюдо"
+      options={['Сэндвич с индейкой', 'Овощная лазанья', 'Салат с тунцом']}
+      onNext={(entree) => navigation.navigate('SideDish', { entree })}
+    />
+  )
+}
+
+function SideDishScreen({ navigation, route }: { navigation: any; route: any }) {
+  return (
+    <SelectionScreen
+      title="Выберите гарнир"
+      options={['Картофель фри', 'Салат', 'Суп']}
+      onNext={(sideDish) =>
+        navigation.navigate('Accompaniment', { ...route.params, sideDish })
+      }
+    />
+  )
+}
+
+function AccompanimentScreen({ navigation, route }: { navigation: any; route: any }) {
+  return (
+    <SelectionScreen
+      title="Выберите напиток"
+      options={['Чай', 'Кофе', 'Лимонад']}
+      onNext={(accompaniment) =>
+        navigation.navigate('Checkout', { ...route.params, accompaniment })
+      }
+    />
+  )
+}
+
+function CheckoutScreen({ route }: { route: any }) {
+  const { entree, sideDish, accompaniment } = route.params
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}>Ваш заказ</Text>
+      <Text>Основное: {entree}</Text>
+      <Text>Гарнир: {sideDish}</Text>
+      <Text>Напиток: {accompaniment}</Text>
+      <Button
+        title="Отправить заказ"
+        onPress={() =>
+          Share.share({
+            message: `Заказ: ${entree}, ${sideDish}, ${accompaniment}`,
+          })
+        }
+      />
+    </View>
+  )
+}
+
+export default function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Entree">
+        <Stack.Screen
+          name="Entree"
+          component={EntreeScreen}
+          options={{ title: 'Lunch Tray', headerBackVisible: false }}
+        />
+        <Stack.Screen name="SideDish" component={SideDishScreen} options={{ title: 'Гарнир' }} />
+        <Stack.Screen
+          name="Accompaniment"
+          component={AccompanimentScreen}
+          options={{ title: 'Напиток' }}
+        />
+        <Stack.Screen name="Checkout" component={CheckoutScreen} options={{ title: 'Чек' }} />
+      </Stack.Navigator>
+      <StatusBar style="auto" />
+    </NavigationContainer>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 40,
+  },
+  title: { fontSize: 20, marginBottom: 16 },
+})
+```
+
+## Итог
+
+- Пошаговый поток — это стек экранов.
+- Данные накапливаются через `{ ...route.params, новое_поле }`.
+- Кнопка «Назад» в заголовке служит отменой шага.
+- `popToTop()` возвращает к началу.
