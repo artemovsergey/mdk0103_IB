@@ -1,102 +1,80 @@
 # МДК 01.03 Разработка мобильных приложений
+
 Специальность: ИБ
 
-# Тестирование студентов
+- лекции: 20
+- практика: 19
+- сам: 2
+
+## Тестирование студентов
 
 - **ИБ-243:** <a href="http://prep.scc/cgi-bin/testm/view.pl?prep=asv&grp=ib-243&prd=2003">тестирование</a> · <a href="http://prep.scc/cgi-bin/testm/jrn.pl?prep=asv&sp=0907&grp=ib-243&prd=2003">журнал</a> · <a href="http://prep.scc/cgi-bin/testm/jrn_reyting.pl?prep=asv&sp=0907&grp=ib-243&prd=2003">рейтинг</a>
 
-# Раздел 1. Основы TypeScript
+## Раздел 1. Основы TypeScript
 
-1 Лекция 1. Переменные и функции
+1. [Лекция 1. Переменные](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%201.%20%D0%9F%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5.md)
+2. [Лекция 2. Функции](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%202.%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md)
+3. [Лекция 3. Условные выражения](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%203.%20%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F.md)
+4. [Лекция 4. Коллекции](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%204.%20%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8.md)
+5. [Лекция 5. Функции высшего порядка с коллекциями](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%205.%20%D0%A4%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8%20%D0%B2%D1%8B%D1%81%D1%88%D0%B5%D0%B3%D0%BE%20%D0%BF%D0%BE%D1%80%D1%8F%D0%B4%D0%BA%D0%B0%20%D1%81%20%D0%BA%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%D0%BC%D0%B8.md)
+6. [Лекция 6. Классы и объекты](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%206.%20%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D1%8B%20%D0%B8%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B.md)
+7. [Лекция 7. Типы функций и lambda-функции](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%207.%20%D0%A2%D0%B8%D0%BF%D1%8B%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B9%20%D0%B8%20lambda-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md)
+8. [Лекция 8. Асинхронность](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%208.%20%D0%90%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C.md)
+9. [Практическая работа 1. Основы TypeScript - переменные и функции](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript%20-%20%D0%BF%D0%B5%D1%80%D0%B5%D0%BC%D0%B5%D0%BD%D0%BD%D1%8B%D0%B5%20%D0%B8%20%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D0%B8.md)
+10. [Практическая работа 2. Условные выражения](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202.%20%D0%A3%D1%81%D0%BB%D0%BE%D0%B2%D0%BD%D1%8B%D0%B5%20%D0%B2%D1%8B%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F.md)
+11. [Практическая работа 3. Циклы](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%203.%20%D0%A6%D0%B8%D0%BA%D0%BB%D1%8B.md)
+12. [Практическая работа 4. Коллекции](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%204.%20%D0%9A%D0%BE%D0%BB%D0%BB%D0%B5%D0%BA%D1%86%D0%B8%D0%B8.md)
+13. [Практическая работа 5. Классы и объекты](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%201.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20TypeScript/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%205.%20%D0%9A%D0%BB%D0%B0%D1%81%D1%81%D1%8B%20%D0%B8%20%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B.md)
 
-2 Практическая работа 1. Основы TypeScript
+## Раздел 2. Основы React Native
 
-3 Лекция 2. Условные выражения
+14. [Лекция 9. Введение в React Native (Happy Birthday)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%209.%20%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B2%20React%20Native%20%28Happy%20Birthday%29.md)
+15. [Лекция 10. Добавление изображений (Happy Birthday)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2010.%20%D0%94%D0%BE%D0%B1%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9%20%28Happy%20Birthday%29.md)
+16. [Лекция 11. Отладка приложения (Dice Roller)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2011.%20%D0%9E%D1%82%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%28Dice%20Roller%29.md)
+17. [Лекция 12. Жизненный цикл приложения (Dessert Clicker)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2012.%20%D0%96%D0%B8%D0%B7%D0%BD%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20%D1%86%D0%B8%D0%BA%D0%BB%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%28Dessert%20Clicker%29.md)
+18. [Практическая работа 6. Основы компонентов React Native](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%206.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20%D0%BA%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D0%BE%D0%B2%20React%20Native.md)
+19. [Практическая работа 7. Интерактивное приложение Dice Roller](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%207.%20%D0%98%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B5%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20Dice%20Roller.md)**20.10**
+20. [Практическая работа 8. Обработка нажатия кнопки (Lemonade)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%208.%20%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0%20%D0%BD%D0%B0%D0%B6%D0%B0%D1%82%D0%B8%D1%8F%20%D0%BA%D0%BD%D0%BE%D0%BF%D0%BA%D0%B8%20%28Lemonade%29.md)**23.10**
+21. [Практическая работа 9. Список с прокруткой (Affirmations)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%209.%20%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D1%81%20%D0%BF%D1%80%D0%BE%D0%BA%D1%80%D1%83%D1%82%D0%BA%D0%BE%D0%B9%20%28Affirmations%29.md)**по журналу**
+22. [Практическая работа 10. Установка значка приложения (Affirmations)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%202.%20%D0%9E%D1%81%D0%BD%D0%BE%D0%B2%D1%8B%20React%20Native/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2010.%20%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0%20%D0%B7%D0%BD%D0%B0%D1%87%D0%BA%D0%B0%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20%28Affirmations%29.md)
 
-4 Практическая работа 2. Условные выражения
+## Раздел 3. Состояние
 
-5 Практическая работа 3. Циклы
+23. [Лекция 13. Работа с состоянием (Tip Time)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%203.%20%D0%A1%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2013.%20%D0%A0%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%20%D1%81%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5%D0%BC%20%28Tip%20Time%29.md)
+24. [Практическая работа 11. Приложение калькулятор чаевых (Tip Time)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%203.%20%D0%A1%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2011.%20%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BA%D0%B0%D0%BB%D1%8C%D0%BA%D1%83%D0%BB%D1%8F%D1%82%D0%BE%D1%80%20%D1%87%D0%B0%D0%B5%D0%B2%D1%8B%D1%85%20%28Tip%20Time%29.md)
 
-6 Лекция 3. Коллекции. Функции высшего порядка
+## Раздел 4. Навигация
 
-7 Практическая работа 4. Коллекции
+25. [Лекция 14. Navigation (Capcake)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%204.%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D1%8F/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2014.%20Navigation%20%28Capcake%29.md)
+26. [Практическая работа 12. Практика навигации (Lunch Tray)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%204.%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D1%8F/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2012%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%BA%D0%B0%20%D0%BD%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D0%B8%20%28Lunch%20Tray%29.md)
+27. [Практическая работа 13. Асинхронность в React Native](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%204.%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D1%8F/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2013%20%D0%90%D1%81%D0%B8%D0%BD%D1%85%D1%80%D0%BE%D0%BD%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%B2%20React%20Native.md)
+28. [Самостоятельная работа 1. Создание адаптивного макета (Reply)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%204.%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D1%8F/%D0%A1%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%201.%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BC%D0%B0%D0%BA%D0%B5%D1%82%D0%B0%20%28Reply%29.md)
+29. [Самостоятельная работа 2. Создание интерактивного адаптивного приложения](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%204.%20%D0%9D%D0%B0%D0%B2%D0%B8%D0%B3%D0%B0%D1%86%D0%B8%D1%8F/%D0%A1%D0%B0%D0%BC%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D1%82%D0%B5%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%202.%20%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%B0%D0%B4%D0%B0%D0%BF%D1%82%D0%B8%D0%B2%D0%BD%D0%BE%D0%B3%D0%BE%20%D0%BF%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F.md)
 
-8 Лекция 4. Классы и объекты
+## Раздел 5. Управление состоянием
 
-9 Лекция 5. Типы функций и лямбда-функции
+30. [Лекция 15. Управление состоянием (Unscramble)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%205.%20%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5%D0%BC/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2015.%20%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5%D0%BC%20%28Unscramble%29.md)
+31. [Практическая работа 14. Применение управления состоянием (Dessert Clicker)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%205.%20%D0%A3%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5%D0%BC/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2014.%20%D0%9F%D1%80%D0%B8%D0%BC%D0%B5%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D1%83%D0%BF%D1%80%D0%B0%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D1%8F%20%D1%81%D0%BE%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5%D0%BC%20%28Dessert%20Clicker%29.md)
 
-10 Практическая работа 5. Классы и объекты
+## Раздел 6. Material Design
 
-11 Лекция 6. Асинхронность
+32. [Лекция 16. Material Design (Woof)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%206.%20Material%20Design/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2016.%20Material%20Design%20%28Woof%29.md)
+33. [Практическая работа 15. Приложение Material Design - Список героев (Superheroes)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%206.%20Material%20Design/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2015.%20%D0%9F%D1%80%D0%B8%D0%BB%D0%BE%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20Material%20Design%20-%20%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%20%D0%B3%D0%B5%D1%80%D0%BE%D0%B5%D0%B2%20%28Superheroes%29.md)
 
-# Раздел 2. Основы React Native
+## Раздел 7. Сетевые запросы
 
-12 Лекция 7. Введение в React Native
+34. [Лекция 17. Сетевые запросы (Mars Photos)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%207.%20%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2017.%20%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B%20%28Mars%20Photos%29.md)
+35. [Лекция 18. Паттерн репозиторий. Внедрение зависимостей (Mars Photos)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%207.%20%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2018.%20%D0%9F%D0%B0%D1%82%D1%82%D0%B5%D1%80%D0%BD%20%D1%80%D0%B5%D0%BF%D0%BE%D0%B7%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D0%B9.%20%D0%92%D0%BD%D0%B5%D0%B4%D1%80%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B7%D0%B0%D0%B2%D0%B8%D1%81%D0%B8%D0%BC%D0%BE%D1%81%D1%82%D0%B5%D0%B9%20%28Mars%20Photos%29.md)
+36. [Практическая работа 16. Загрузка и отображение изображений из интернета](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%207.%20%D0%A1%D0%B5%D1%82%D0%B5%D0%B2%D1%8B%D0%B5%20%D0%B7%D0%B0%D0%BF%D1%80%D0%BE%D1%81%D1%8B/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2016.%20%D0%97%D0%B0%D0%B3%D1%80%D1%83%D0%B7%D0%BA%D0%B0%20%D0%B8%20%D0%BE%D1%82%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%D0%B7%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%B8%D0%B9%20%D0%B8%D0%B7%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B0.md)
 
-13 Практическая работа 6. Основы компонентов React Native
+## Раздел 8. Хранение данных
 
-14 <a href="http://192.168.4.90/asv/mdk0103_IB/src/master/course/%d0%a0%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%202.%20%d0%9e%d1%81%d0%bd%d0%be%d0%b2%d1%8b%20React%20Native/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f%20%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%207.%20%d0%98%d0%bd%d1%82%d0%b5%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d0%be%d0%b5%20%d0%bf%d1%80%d0%b8%d0%bb%d0%be%d0%b6%d0%b5%d0%bd%d0%b8%d0%b5%20Dice%20Roller.md"> Практическая работа 7. Интерактивное приложение Dice Roller</a> **20.10**
+37. [Лекция 19. SQL и базы данных](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%208.%20%D0%A5%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2019.%20SQL%20%D0%B8%20%D0%B1%D0%B0%D0%B7%D1%8B%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85.md)
+38. [Лекция 20. Хранение настроек (AsyncStorage)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%208.%20%D0%A5%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/%D0%9B%D0%B5%D0%BA%D1%86%D0%B8%D1%8F%2020.%20%D0%A5%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BD%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B5%D0%BA%20%28AsyncStorage%29.md)
+39. [Практическая работа 17. Сохранение данных с помощью SQLite](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%208.%20%D0%A5%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2017.%20%D0%A1%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D1%81%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E%20SQLite.md)
+40. [Практическая работа 18. Чтение и обновление данных с помощью SQLite](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%208.%20%D0%A5%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2018.%20%D0%A7%D1%82%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B8%20%D0%BE%D0%B1%D0%BD%D0%BE%D0%B2%D0%BB%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85%20%D1%81%20%D0%BF%D0%BE%D0%BC%D0%BE%D1%89%D1%8C%D1%8E%20SQLite.md)
+41. [Практическая работа 19. Расписание автобусов (Bus Schedule)](course/%D0%A0%D0%B0%D0%B7%D0%B4%D0%B5%D0%BB%208.%20%D0%A5%D1%80%D0%B0%D0%BD%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85/%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F%20%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%B0%2019.%20%D0%A0%D0%B0%D1%81%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%B0%D0%B2%D1%82%D0%BE%D0%B1%D1%83%D1%81%D0%BE%D0%B2%20%28Bus%20Schedule%29.md)
 
-15 <a href="http://192.168.4.90/asv/mdk0103_IB/src/master/course/%d0%a0%d0%b0%d0%b7%d0%b4%d0%b5%d0%bb%202.%20%d0%9e%d1%81%d0%bd%d0%be%d0%b2%d1%8b%20React%20Native/%d0%9f%d1%80%d0%b0%d0%ba%d1%82%d0%b8%d1%87%d0%b5%d1%81%d0%ba%d0%b0%d1%8f%20%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%b0%208.%20%d0%9e%d0%b1%d1%80%d0%b0%d0%b1%d0%be%d1%82%d0%ba%d0%b0%20%d0%bd%d0%b0%d0%b6%d0%b0%d1%82%d0%b8%d1%8f%20%d0%ba%d0%bd%d0%be%d0%bf%d0%ba%d0%b8%20%28Lemonade%29.md">Практическая работа 8. Обработка нажатии кнопкиы </a> **23.10**
+## Дополнительные материалы
 
-16 Практическая работа 9. Создание списка с прокруткой **По журналу**
-
-17 Практическая работа 10. Установка значка приложения
-
-# Раздел 3. Состояние
-
-18 Лекция 8. Работа с состоянием в React Native
-
-19 Практическая работа 11. Приложение калькулятор чаевых
-
-# Раздел 4. Навигация
-
-20 Лекция 9. Навигация в React Native
-
-21 Практическая работа 12. Практика навигации
-
-22 Практическая работа 13. Асинхронность в React Native
-
-23 Самостоятельная работа 1. Создания адаптивного макета
-
-24 Самостоятельная работа 2. Создание интерактивного адаптивного приложения
-
-# Раздел 5. Управление состоянием
-
-25 Лекция 10. Управление состоянием (Unscramble)
-
-26 Практическая работа 14. Применение управления состоянием
-
-# Раздел 6. Material Design
-
-27 Лекция 11. Material Design (Woof)
-
-28 Практическая работа 15. Разработка приложения Material Design - Список героев
-
-# Раздел 7. Сетевые запросы
-
-29 Лекция 12. Сетевые запросы (Mars Photos)
-
-30 Лекция 13. Паттерн Repository. Внедрение зависимостей
-
-31 Практическая работа 16. Загрузка и отображение изображений из интернета
-
-# Раздел 8. Хранение данных
-
-32 Лекция 14. SQL и базы данных
-
-32а Лекция 15. Хранение настроек (AsyncStorage)
-
-33 Практическая работа 17. Сохранение данных с помощью SQLite
-
-34 Практическая работа 18. Чтение и обновление данных с помощью SQLite
-
-35 Практическая работа 19. Разработка приложения - Расписание автобусов
-
-
-
-
-
-
-
-
+- [Настройка окружения Expo](course/%D0%9D%D0%B0%D1%81%D1%82%D1%80%D0%BE%D0%B9%D0%BA%D0%B0%20%D0%BE%D0%BA%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D1%8F%20Expo.md)

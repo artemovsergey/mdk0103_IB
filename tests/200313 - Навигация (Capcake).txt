@@ -1,0 +1,130 @@
+192.168.255
+Ставропольский колледж связи
+Специальность::0907::Информационные системы и программирование
+Дисциплина::2003::МДК0103 Разработка мобильных приложений: Навигация (Capcake)
+Преподаватель::Артемов С.В.
+Индекс теста::13::МДК0103 Разработка мобильных приложений: Навигация (Capcake)
+Всего вопросов::20
+Выводимых вопросов::15
+Тип теста::S=100::Z(DCDCDC)::J80%70%60%
+
+##01::3
+Какое приложение создаётся в лекции?
+Приложение заказа кексов (Cupcake)
+Калькулятор чаевых (Tip Time)
+Игра-кликер (Dessert Clicker)
+Список героев (Superheroes)
+##02::3
+Какая библиотека используется для навигации между экранами?
+React Navigation
+React Router
+Redux
+Express
+##03::3
+Какой командой устанавливают библиотеки навигации в проекте Expo?
+npx expo install @react-navigation/native @react-navigation/native-stack
+npx expo start --navigation
+npm run build-navigation
+npx create-expo-app navigation
+##04::3
+За что отвечает пакет @react-navigation/native?
+Ядро навигации
+Навигатор стека
+Работа с базой данных
+Стилизация компонентов
+##05::3
+За что отвечает пакет @react-navigation/native-stack?
+Навигатор стека
+Ядро навигации
+Сетевые запросы
+Хранение настроек
+##06::3
+Как работает навигатор стека?
+Экраны кладутся друг на друга, как карточки
+Все экраны показываются одновременно в сетке
+Экраны заменяют друг друга без истории
+Экраны открываются в браузере
+##07::3
+Какой компонент управляет всем деревом навигации?
+NavigationContainer
+Stack.Screen
+AppState
+NavigationTree
+##08::3
+Какая функция создаёт навигатор стека?
+createNativeStackNavigator
+createNavigationContainer
+useState
+createStackScreen
+##09::3
+Как описывается отдельный экран в навигаторе?
+Stack.Screen
+Stack.Item
+ScreenView
+NavigationContainer
+##10::3
+Что задаёт свойство name у Stack.Screen?
+Имя экрана, используемое при переходах
+Размер шрифта заголовка
+Цвет фона экрана
+Адрес сервера
+##11::3
+Какие четыре экрана создаются в приложении Cupcake?
+Start, Flavor, Pickup, Summary
+Home, About, Contacts, Settings
+Login, Register, Profile, Exit
+Splash, Menu, Cart, Pay
+##12::3
+Что делает вызов navigation.navigate('Flavor')?
+Открывает экран с именем Flavor
+Закрывает приложение
+Возвращает на предыдущий экран
+Удаляет экран Flavor
+##13::3
+Как экраны получают объект navigation?
+Через свойства (props)
+Через глобальную переменную
+Через файл app.json
+Через запрос к серверу
+##14::3
+Как передать данные на другой экран при переходе?
+Вторым аргументом функции navigate
+Через useState
+Через файл на устройстве
+Через push-уведомление
+##15::3
+Как получить переданные параметры на экране?
+Через route.params
+Через route.data
+Через navigation.params
+Через props.title
+##16::3
+Какой API используется на экране Summary для отправки заказа?
+Share.share
+Alert.alert
+fetch
+Print.print
+##17::3
+Как вернуться на предыдущий экран программно?
+navigation.goBack()
+navigation.back()
+navigation.pop()
+navigation.return()
+##18::3
+Как вернуться к первому экрану стека?
+navigation.popToTop()
+navigation.goBack()
+navigation.pop()
+navigation.toStart()
+##19::3
+Какое свойство Stack.Navigator задаёт первый экран при запуске?
+initialRouteName
+firstRoute
+startScreen
+defaultScreen
+##20::3
+Что появляется автоматически на вложенных экранах?
+Кнопка «Назад» в заголовке
+Строка поиска
+Меню настроек
+Кнопка выхода
