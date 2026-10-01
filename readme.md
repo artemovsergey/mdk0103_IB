@@ -8,7 +8,7 @@
 
 ## Тестирование студентов
 
-- **ИБ-243:** <a href="http://prep.scc/cgi-bin/testm/view.pl?prep=asv&grp=ib-243&prd=2003">тестирование</a> · <a href="http://prep.scc/cgi-bin/testm/jrn.pl?prep=asv&sp=0907&grp=ib-243&prd=2003">журнал</a> · <a href="http://prep.scc/cgi-bin/testm/jrn_reyting.pl?prep=asv&sp=0907&grp=ib-243&prd=2003">рейтинг</a>
+- **ИБ-243:** <a href="http://prep.scc/cgi-bin/testm/view.pl?prep=asv&grp=ib243&prd=2003">тестирование</a> · <a href="http://prep.scc/cgi-bin/testm/jrn.pl?prep=asv&sp=0907&grp=ib243&prd=2003">журнал</a> · <a href="http://prep.scc/cgi-bin/testm/jrn_reyting.pl?prep=asv&sp=0907&grp=ib243&prd=2003">рейтинг</a>
 
 ## Раздел 1. Основы TypeScript
 
