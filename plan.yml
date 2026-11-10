@@ -1,0 +1,298 @@
+schema: 1
+status: draft
+course:
+  code: МДК 01.03
+  title: Разработка мобильных приложений
+  specialty: 09.02.07 Информационная безопасность
+  group: ИБ-243
+  academic_year: 2026/2027
+  repo: artemovsergey/mdk0103_IB
+  source_dir: course
+  hours_source: null
+  hours_note: 'Рабочая программа не предоставлена: часы по юнитам не заполнены'
+counts:
+  lectures: 20
+  practices: 19
+  selfstudy: 2
+modules:
+- id: r1
+  number: 1
+  title: Основы TypeScript
+  units:
+  - id: lecture-01
+    type: lecture
+    number: 1
+    title: Создание и использование переменных в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Лекция 1. Переменные.md
+    hours: null
+  - id: lecture-02
+    type: lecture
+    number: 2
+    title: Создание и использование функций в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Лекция 2. Функции.md
+    hours: null
+  - id: lecture-03
+    type: lecture
+    number: 3
+    title: Условные выражения в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Лекция 3. Условные выражения.md
+    hours: null
+  - id: lecture-04
+    type: lecture
+    number: 4
+    title: Использование коллекций в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Лекция 4. Коллекции.md
+    hours: null
+  - id: lecture-05
+    type: lecture
+    number: 5
+    title: Функции высшего порядка с коллекциями
+    file: course/Раздел 1. Основы TypeScript/Лекция 5. Функции высшего порядка с коллекциями.md
+    hours: null
+  - id: lecture-06
+    type: lecture
+    number: 6
+    title: Использование классов и объектов в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Лекция 6. Классы и объекты.md
+    hours: null
+  - id: lecture-07
+    type: lecture
+    number: 7
+    title: Типы функций и лямбда-выражения в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Лекция 7. Типы функций и lambda-функции.md
+    hours: null
+  - id: lecture-08
+    type: lecture
+    number: 8
+    title: Асинхронность в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Лекция 8. Асинхронность.md
+    hours: null
+  - id: practice-01
+    type: practice
+    number: 1
+    title: Основы TypeScript - переменные и функции
+    file: course/Раздел 1. Основы TypeScript/Практическая работа 1. Основы TypeScript - переменные и функции.md
+    hours: null
+  - id: practice-02
+    type: practice
+    number: 2
+    title: Условные выражения в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Практическая работа 2. Условные выражения.md
+    hours: null
+  - id: practice-03
+    type: practice
+    number: 3
+    title: Циклы
+    file: course/Раздел 1. Основы TypeScript/Практическая работа 3. Циклы.md
+    hours: null
+  - id: practice-04
+    type: practice
+    number: 4
+    title: Работа с коллекциями в TypeScript
+    file: course/Раздел 1. Основы TypeScript/Практическая работа 4. Коллекции.md
+    hours: null
+  - id: practice-05
+    type: practice
+    number: 5
+    title: Классы и объекты
+    file: course/Раздел 1. Основы TypeScript/Практическая работа 5. Классы и объекты.md
+    hours: null
+- id: r2
+  number: 2
+  title: Основы React Native
+  units:
+  - id: lecture-09
+    type: lecture
+    number: 9
+    title: Введение в React Native
+    file: course/Раздел 2. Основы React Native/Лекция 9. Введение в React Native (Happy Birthday).md
+    hours: null
+  - id: lecture-10
+    type: lecture
+    number: 10
+    title: Добавление изображений в приложение
+    file: course/Раздел 2. Основы React Native/Лекция 10. Добавление изображений (Happy Birthday).md
+    hours: null
+  - id: lecture-11
+    type: lecture
+    number: 11
+    title: Отладка приложения
+    file: course/Раздел 2. Основы React Native/Лекция 11. Отладка приложения (Dice Roller).md
+    hours: null
+  - id: lecture-12
+    type: lecture
+    number: 12
+    title: Жизненный цикл приложения
+    file: course/Раздел 2. Основы React Native/Лекция 12. Жизненный цикл приложения (Dessert Clicker).md
+    hours: null
+  - id: practice-06
+    type: practice
+    number: 6
+    title: Основы компонентов React Native
+    file: course/Раздел 2. Основы React Native/Практическая работа 6. Основы компонентов React Native.md
+    hours: null
+  - id: practice-07
+    type: practice
+    number: 7
+    title: Создание интерактивного приложения Dice Roller
+    file: course/Раздел 2. Основы React Native/Практическая работа 7. Интерактивное приложение Dice Roller.md
+    hours: null
+  - id: practice-08
+    type: practice
+    number: 8
+    title: Обработка нажатия кнопки (Lemonade)
+    file: course/Раздел 2. Основы React Native/Практическая работа 8. Обработка нажатия кнопки (Lemonade).md
+    hours: null
+  - id: practice-09
+    type: practice
+    number: 9
+    title: Создание списка с прокруткой
+    file: course/Раздел 2. Основы React Native/Практическая работа 9. Список с прокруткой (Affirmations).md
+    hours: null
+  - id: practice-10
+    type: practice
+    number: 10
+    title: Установка значка приложения
+    file: course/Раздел 2. Основы React Native/Практическая работа 10. Установка значка приложения (Affirmations).md
+    hours: null
+- id: r3
+  number: 3
+  title: Состояние
+  units:
+  - id: lecture-13
+    type: lecture
+    number: 13
+    title: Работа с состоянием в React Native
+    file: course/Раздел 3. Состояние/Лекция 13. Работа с состоянием (Tip Time).md
+    hours: null
+  - id: practice-11
+    type: practice
+    number: 11
+    title: Калькулятор чаевых
+    file: course/Раздел 3. Состояние/Практическая работа 11. Приложение калькулятор чаевых (Tip Time).md
+    hours: null
+- id: r4
+  number: 4
+  title: Навигация
+  units:
+  - id: lecture-14
+    type: lecture
+    number: 14
+    title: Навигация в React Native
+    file: course/Раздел 4. Навигация/Лекция 14. Navigation (Capcake).md
+    hours: null
+  - id: practice-12
+    type: practice
+    number: 12
+    title: Навигация (Lunch Tray)
+    file: course/Раздел 4. Навигация/Практическая работа 12 Практика навигации (Lunch Tray).md
+    hours: null
+  - id: practice-13
+    type: practice
+    number: 13
+    title: Асинхронность. Разработка многопоточного приложения
+    file: course/Раздел 4. Навигация/Практическая работа 13 Асинхронность в React Native.md
+    hours: null
+  - id: selfstudy-01
+    type: selfstudy
+    number: 1
+    title: Создание приложения с адаптивным макетом
+    file: course/Раздел 4. Навигация/Самостоятельная работа 1. Создание адаптивного макета (Reply).md
+    hours: null
+  - id: selfstudy-02
+    type: selfstudy
+    number: 2
+    title: Создание спортивного приложения
+    file: course/Раздел 4. Навигация/Самостоятельная работа 2. Создание интерактивного адаптивного приложения.md
+    hours: null
+- id: r5
+  number: 5
+  title: Управление состоянием
+  units:
+  - id: lecture-15
+    type: lecture
+    number: 15
+    title: Управление состоянием и архитектура приложения
+    file: course/Раздел 5. Управление состоянием/Лекция 15. Управление состоянием (Unscramble).md
+    hours: null
+  - id: practice-14
+    type: practice
+    number: 14
+    title: Вынос логики приложения в хук (Dessert Clicker)
+    file: course/Раздел 5. Управление состоянием/Практическая работа 14. Применение управления состоянием (Dessert Clicker).md
+    hours: null
+- id: r6
+  number: 6
+  title: Material Design
+  units:
+  - id: lecture-16
+    type: lecture
+    number: 16
+    title: Применение темы Material Design
+    file: course/Раздел 6. Material Design/Лекция 16. Material Design (Woof).md
+    hours: null
+  - id: practice-15
+    type: practice
+    number: 15
+    title: Разработка приложения Material Design — Список супергероев
+    file: course/Раздел 6. Material Design/Практическая работа 15. Приложение Material Design - Список героев (Superheroes).md
+    hours: null
+- id: r7
+  number: 7
+  title: Сетевые запросы
+  units:
+  - id: lecture-17
+    type: lecture
+    number: 17
+    title: Сетевые запросы
+    file: course/Раздел 7. Сетевые запросы/Лекция 17. Сетевые запросы (Mars Photos).md
+    hours: null
+  - id: lecture-18
+    type: lecture
+    number: 18
+    title: Паттерн репозиторий и внедрение зависимостей
+    file: course/Раздел 7. Сетевые запросы/Лекция 18. Паттерн репозиторий. Внедрение зависимостей (Mars Photos).md
+    hours: null
+  - id: practice-16
+    type: practice
+    number: 16
+    title: Загрузка и отображение изображений из Интернета
+    file: course/Раздел 7. Сетевые запросы/Практическая работа 16. Загрузка и отображение изображений из интернета.md
+    hours: null
+- id: r8
+  number: 8
+  title: Хранение данных
+  units:
+  - id: lecture-19
+    type: lecture
+    number: 19
+    title: SQL и базы данных
+    file: course/Раздел 8. Хранение данных/Лекция 19. SQL и базы данных.md
+    hours: null
+  - id: lecture-20
+    type: lecture
+    number: 20
+    title: Хранение настроек (AsyncStorage)
+    file: course/Раздел 8. Хранение данных/Лекция 20. Хранение настроек (AsyncStorage).md
+    hours: null
+  - id: practice-17
+    type: practice
+    number: 17
+    title: Сохранение данных с помощью SQLite
+    file: course/Раздел 8. Хранение данных/Практическая работа 17. Сохранение данных с помощью SQLite.md
+    hours: null
+  - id: practice-18
+    type: practice
+    number: 18
+    title: Чтение и обновление данных с помощью SQLite
+    file: course/Раздел 8. Хранение данных/Практическая работа 18. Чтение и обновление данных с помощью SQLite.md
+    hours: null
+  - id: practice-19
+    type: practice
+    number: 19
+    title: Приложение «Расписание автобусов»
+    file: course/Раздел 8. Хранение данных/Практическая работа 19. Расписание автобусов (Bus Schedule).md
+    hours: null
+extras:
+- title: Настройка окружения Expo
+  file: course/Настройка окружения Expo.md
